@@ -6,7 +6,7 @@ Docker-ffmpeg-opus is a basic docker image containing ffmpeg with libopus and th
 
 ## Info
 
-This image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>.
+This image is based on [marrold/marrold-docker-opus-toolsmarrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>.
 
 This image is currently only available for the `amd64` architecture.
 
