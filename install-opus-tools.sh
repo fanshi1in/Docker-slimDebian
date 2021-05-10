@@ -30,6 +30,9 @@ curl -Ls https://archive.mozilla.org/pub/opus/libopusenc-0.2.1.tar.gz | tar xz -
 # Opus Tools 0.2
 curl -Ls https://archive.mozilla.org/pub/opus/opus-tools-0.2.tar.gz | tar xz -C "$TEMP_FOLDER"
 
+# yasm 1.3.0
+curl -Ls http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz | tar xz -C "$TEMP_FOLDER"
+
 # ffmpeg 4.4
 curl -Ls https://ffmpeg.org/releases/ffmpeg-4.4.tar.gz | tar xz -C "$TEMP_FOLDER"
 
@@ -53,6 +56,11 @@ make
 make install
 ldconfig
 cp "$TEMP_FOLDER"/opus-tools-0.2/opusrtp /usr/local/bin
+
+cd "$TEMP_FOLDER"/yasm-1.3.0 || exit
+./configure
+make
+make install
 
 cd "$TEMP_FOLDER"/ffmpeg-4.4 || exit
 ./configure --disable-debug --enable-static --enable-libopus --enable-encoder=libopus
