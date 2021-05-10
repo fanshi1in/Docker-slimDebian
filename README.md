@@ -5,7 +5,7 @@ opus-tools is a basic docker image containing the [opus-tools](https://opus-code
 
 ## Info
 
-The image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools)(Thanks)
+The image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>
 
 The image is currently only available for the `amd64` architecture.
 
