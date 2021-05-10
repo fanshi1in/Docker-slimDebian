@@ -9,7 +9,7 @@ This image is based on [marrold-docker-opus-tools](https://github.com/marrold/ma
 
 This image is currently only available for the `amd64` architecture.
 
-This script for installing ffmpeg with liopus and opus-tools is based on [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) .
+This script for installing ffmpeg with libopus and opus-tools is based on [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) .
 
 The current ffmpeg version is 4.4 and opus-tools version is 0.2.
 
