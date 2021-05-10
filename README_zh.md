@@ -6,7 +6,7 @@ Docker-ffmpeg-opus 是一个基于 ffmpeg with libopus 和 [opus-tools](https://
 
 ## 简介
 
-此镜像在 [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) 基础上加入 ffmpeg 第三方库(libopus)，<b>在此表示感谢！</b>
+此镜像在 [marrold/marrold-docker-opus-toolsmarrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) 基础上加入 ffmpeg 第三方库(libopus)，<b>在此表示感谢！</b>
 
 此镜像目前仅适用于`amd64`正常运行；
 
