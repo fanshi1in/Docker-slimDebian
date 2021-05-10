@@ -17,7 +17,7 @@ The current ffmpeg version is 4.4 and opus-tools version is 0.2.
 
 `docker run -it --name ffmpeg-opus -v ~/media/:/media fanshilin/docker-ffmpeg-opus`
 
-`docker exec -it ffmpeg-opus ffmpeg -i "/media/xxx.dts" -ac 6(channels number of the track) -c:a libopus -b:a 768k "/media/xxx.opus"`
+`docker exec -it ffmpeg-opus ffmpeg -i "/media/xxx.dts" -ac 6 -c:a libopus -b:a 768k "/media/xxx.opus"`
 
 `docker exec -it ffmpeg-opus opusenc --bitrate 768 "/media/xxx.wav" "/media/xxx.opus"`
 
