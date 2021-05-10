@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-LABEL maintainer="docker@marrold.co.uk"
+LABEL maintainer="imfanshilin@gmail.com"
 
 COPY install-opus-tools.sh /opt
 
@@ -12,4 +12,4 @@ RUN apt-get update  && \
     apt-get remove -y build-essential
 
 WORKDIR /opt
-CMD bash
+CMD ["/bin/bash"]
