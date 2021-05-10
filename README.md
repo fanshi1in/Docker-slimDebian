@@ -1,15 +1,15 @@
 
-# marrold-opus-tools
+# opus-tools
 
-marrold-opus-tools is a basic docker image containing the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html) binaries for working with opus.
+opus-tools is a basic docker image containing the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html) binaries for working with opus.
 
 ## Info
 
-The image is based on [debian:buster-slim](https://hub.docker.com/_/debian) and the current opus-tools version is 0.2
+The image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools)(Thanks)
 
 The image is currently only available for the `amd64` architecture.
 
-The script for installing opus-tools was created by [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961)
+The script for installing opus-tools was created by [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) and the current opus-tools version is 0.2
 
 ## Example Usage
 
