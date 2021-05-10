@@ -55,7 +55,7 @@ ldconfig
 cp "$TEMP_FOLDER"/opus-tools-0.2/opusrtp /usr/local/bin
 
 cd "$TEMP_FOLDER"/ffmpeg-4.4 || exit
-./configure --disable-debug --enable-static -enable-libopus --enable-encoder=libopus
+./configure --disable-debug --enable-static --enable-libopus --enable-encoder=libopus
 make && make install
 
 rm -rf "$TEMP_FOLDER"
