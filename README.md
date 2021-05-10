@@ -1,27 +1,25 @@
 
-# opus-tools
+# Docker-ffmpeg-opus
 
-opus-tools is a basic docker image containing the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html) binaries for working with opus.
+Docker-ffmpeg-opus is a basic docker image containing ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
 
 ## Info
 
-The image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>
+This image is based on [marrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>.
 
-The image is currently only available for the `amd64` architecture.
+This image is currently only available for the `amd64` architecture.
 
-The script for installing opus-tools was created by [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) and the current opus-tools version is 0.2
+This script for installing ffmpeg with liopus and opus-tools is based on [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) .
+
+The current ffmpeg version is 4.4 and opus-tools version is 0.2.
 
 ## Example Usage
 
-The intended usage is to mount a directory of PCAP files and then execute bash, so you can then extract the opus and use `opusinfo` to get information on the stream(s).
+`docker run -it --name ffmpeg-opus -v ~/media/:/media fanshilin/docker-ffmpeg-opus`
 
-`docker run -it -v ~/opus-pcaps/:/opt marrold/marrold-opus-tools bash`
+`docker exec -it ffmpeg-opus ffmpeg -i "/media/xxx.dts" -c:a libopus -b:a 768k "/media/xxx.opus"`
 
-opusrtp cannot handle PCAPs with VLAN tags so you can remove them first with tcprewrite which is included:
-
-````
-tcprewrite --enet-vlan=del --infile=input.pcap --outfile=output.pcap
-````
+`docker exec -it ffmpeg-opus opusenc --bitrate 768 "/media/xxx.wav" "/media/xxx.opus"`
 
 ## License
 
