@@ -59,8 +59,7 @@ cp "$TEMP_FOLDER"/opus-tools-0.2/opusrtp /usr/local/bin
 
 cd "$TEMP_FOLDER"/yasm-1.3.0 || exit
 ./configure
-make
-make install
+make && make install
 
 cd "$TEMP_FOLDER"/ffmpeg-4.4 || exit
 ./configure --disable-debug --enable-static --enable-libopus --enable-encoder=libopus
