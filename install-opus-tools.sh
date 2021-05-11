@@ -14,6 +14,9 @@ apt update > /dev/null 2>&1 && apt install -y curl libflac-dev > /dev/null 2>&1
 
 apt -y purge opus* > /dev/null 2>&1 && apt -y purge libopus-dev > /dev/null 2>&1
 
+# install mkvtoolnix
+apt install mkvtoolnix mkvtoolnix-gui
+
 # Download necessary files
 
 TEMP_FOLDER="$(mktemp -d)"
