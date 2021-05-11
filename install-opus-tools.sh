@@ -16,7 +16,7 @@ apt -y purge opus* > /dev/null 2>&1 && apt -y purge libopus-dev > /dev/null 2>&1
 
 # install mkvtoolnix
 
-apt install -y --force-yes mkvtoolnix mkvtoolnix-gui
+apt install -y --force-yes mkvtoolnix
 
 # Download necessary files
 
