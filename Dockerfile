@@ -14,7 +14,7 @@ RUN apt-get update && \
     bash upgrade_python.sh && \
     bash install_opus_tools.sh && \
     apt-get install -y python3-pip wkhtmltopdf ttf-wqy-microhei && \
-    pip3 install pdfkit requests-html loguru wget bilili apscheduler && \
+    pip3 install pdfkit requests-html loguru wget bilili apscheduler uvloop && \
     pip3 install --pre yutto && \
     apt-get remove -y build-essential
 
