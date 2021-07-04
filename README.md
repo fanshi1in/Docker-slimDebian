@@ -1,12 +1,10 @@
-[**简体中文**](https://github.com/fanshi1in/docker-ffmpeg-opus/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/docker-ffmpeg-opus/blob/main/README.md)
+[**简体中文**](https://github.com/fanshi1in/Docker-slimDebian/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/Docker-slimDebian/blob/main/README.md)
 
-# Docker-ffmpeg-opus
+# Docker-slimDebian
 
-Docker-ffmpeg-opus is a basic docker image containing ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
+Docker-slimDebian is a basic docker image containing wkhtmltopdf, python-pdfkit, ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
 
 ## Info
-
-This image is based on [marrold/marrold-docker-opus-toolsmarrold-docker-opus-tools](https://github.com/marrold/marrold-docker-opus-tools) <b>(Thanks!)</b>.
 
 This image is currently only available for the `amd64` architecture.
 
@@ -15,6 +13,12 @@ This script for installing ffmpeg with libopus and opus-tools is based on [nottt
 The current ffmpeg version is 4.4 and opus-tools version is 0.2.
 
 ## Example Usage
+
+`pdfkit.from_url('http://google.com', 'out.pdf') # external link`
+
+`pdfkit.from_file('test.html', 'out.pdf') # local file`
+
+`pdfkit.from_string('Hello!', 'out.pdf') # string`
 
 `docker run -it --name ffmpeg-opus -v ~/media/:/media fanshilin/docker-ffmpeg-opus`
 
