@@ -1,8 +1,8 @@
-[**简体中文**](https://github.com/fanshi1in/Docker-slimDebian/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/Docker-slimDebian/blob/main/README.md)
+[**简体中文**](https://github.com/fanshi1in/docker-slimdebian/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/docker-slimdebian/blob/main/README.md)
 
-# Docker-slimDebian
+# docker-slimdebian
 
-Docker-slimDebian is a basic docker image containing wkhtmltopdf, python-pdfkit, ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
+docker-slimdebian is a basic docker image containing wkhtmltopdf, python-pdfkit, ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
 
 ## Info
 
