@@ -2,20 +2,8 @@
 # Install opus-tools & ffmpeg
 # Latest releases: opus 1.3.1, opus-tools 0.2, opusfile 0.11, libopusenc 0.2.1, ffmpeg 4.4
 
-set -e 
+set -e
 set -o pipefail
-
-# Install packages needed
- 
-apt update > /dev/null 2>&1 && apt install -y curl libflac-dev > /dev/null 2>&1
-
-# Remove packages that can cause issues
-
-apt -y purge opus* > /dev/null 2>&1 && apt -y purge libopus-dev > /dev/null 2>&1
-
-# install mkvtoolnix
-
-apt install -y --force-yes mkvtoolnix
 
 # Download necessary files
 
@@ -55,9 +43,7 @@ make && make install
 
 cd "$TEMP_FOLDER"/opus-tools-0.2 || exit
 ./configure
-make
-make install
-ldconfig
+make && make install && ldconfig
 cp "$TEMP_FOLDER"/opus-tools-0.2/opusrtp /usr/local/bin
 
 cd "$TEMP_FOLDER"/yasm-1.3.0 || exit
