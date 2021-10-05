@@ -1,14 +1,14 @@
-[**简体中文**](https://github.com/fanshi1in/docker-slimdebian/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/docker-slimdebian/blob/main/README.md)
+[**简体中文**](https://github.com/fanshi1in/bicodec/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/bicodec/blob/main/README.md)
 
-# docker-slimdebian
+# bicodec
 
-docker-slimdebian is a basic docker image containing wkhtmltopdf, python-pdfkit, ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
+bicodec is a basic docker image containing wkhtmltopdf, python-pdfkit, ffmpeg with libopus and the [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html).
 
 ## Info
 
 This image is currently only available for the `amd64` architecture.
 
-This script for installing ffmpeg with libopus and opus-tools is based on [nottt](https://gist.github.com/Nottt/f55dd79ca235d8add67423a76b304961) .
+This script for installing ffmpeg with libopus and opus-tools.
 
 The current ffmpeg version is 4.4 and opus-tools version is 0.2.
 
