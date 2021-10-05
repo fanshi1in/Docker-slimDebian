@@ -1,8 +1,8 @@
-[**简体中文**](https://github.com/fanshi1in/docker-ffmpeg-opus/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/docker-ffmpeg-opus/blob/main/README.md)
+[**简体中文**](https://github.com/fanshi1in/bicodec/blob/main/README_zh.md)&nbsp;&nbsp;&nbsp;[**English**](https://github.com/fanshi1in/bicodec/blob/main/README.md)
 
 ## 定义
 
-Docker-ffmpeg-opus 是一个基于 ffmpeg with libopus 和 [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html) 的 Docker 镜像.
+bicodec 是一个基于 ffmpeg with libopus 和 [opus-tools](https://opus-codec.org/release/dev/2018/09/18/opus-tools-0_2.html) 的 Docker 镜像.
 
 ## 简介
 
@@ -18,7 +18,7 @@ Docker-ffmpeg-opus 是一个基于 ffmpeg with libopus 和 [opus-tools](https://
 
 ### 安装
 
-`docker run -it --name ffmpeg-opus -v ~/media/:/media fanshilin/docker-ffmpeg-opus`
+`docker run -it --name ffmpeg-opus -v ~/media/:/media fanshilin/bicodec`
 
 ### 音轨转换举例
 
