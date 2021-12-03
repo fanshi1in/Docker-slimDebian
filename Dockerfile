@@ -6,9 +6,12 @@ COPY install_opus_tools.sh /opt
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y locales pkg-config build-essential libpcap-dev libssl-dev wkhtmltopdf ttf-wqy-microhei curl libflac-dev mkvtoolnix \
+    && apt-get install -y locales pkg-config build-essential \
+                          libx264-dev libx265-dev libpcap-dev \
+                          libssl-dev wkhtmltopdf ttf-wqy-microhei \
+                          curl libflac-dev mkvtoolnix \
     && apt-get purge -y opus* libopus-dev \
-    && pip install pdfkit requests-html requests loguru wget uvloop \
+    && pip install pdfkit requests-html requests loguru yt-dlp wget uvloop \
     && pip install --pre yutto \
     && cd /opt \
     && bash install_opus_tools.sh \
