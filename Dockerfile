@@ -16,7 +16,7 @@ RUN apt update -y \
     && cd /opt \
     && bash opustools_install.sh \
     && localedef -c -f UTF-8 -i zh_CN zh_CN.utf8 \
-    && apt autoremove -y pkg-config build-essential locales libpcap-dev libssl-dev \
+    && apt autoremove -y pkg-config build-essential libpcap-dev libssl-dev \
     && rm -f opustools_install.sh
 
 ENV LANG zh_CN.utf8
